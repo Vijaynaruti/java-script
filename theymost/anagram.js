@@ -9,7 +9,7 @@ function isAnagram(str1, str2) {
     for (let char of str1) {
         count[char] = (count[char] || 0) + 1;
     }
-
+console.log(count);
     for (let char of str2) {
         if (!count[char]) return false;
         count[char]--;
